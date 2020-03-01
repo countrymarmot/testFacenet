@@ -68,4 +68,3 @@ if __name__ == "__main__":
     print("label:", y_train)
 
     np.savez_compressed("data/syna.npz", X_train, y_train, X_val, y_val)
-

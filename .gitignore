@@ -1,8 +1,9 @@
-# Pycharm project
+# IDE settings
 .idea
 test_image/
 weights/
 model/
+.vscode/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,7 +1,6 @@
-import math
 import numpy as np
 from mtcnn.mtcnn import MTCNN
-import tensorflow.keras as keras
+from tensorflow import keras
 import cv2
 import pickle
 from sklearn.preprocessing import Normalizer
@@ -18,6 +17,7 @@ G_GREEN = (0, 255, 0)
 G_RED = (255, 0, 0)
 G_YELLOW = (255, 255, 0)
 G_BLUE = (0, 0, 255)
+
 
 def predict_face(face):
     face = cv2.resize(face, (160, 160), interpolation=cv2.INTER_AREA)
@@ -64,8 +64,8 @@ def test_static_img():
 
     #cv2.imshow("camera", inputImg)
     cv2.imwrite("./test_image/syna/test/person1_generated.jpg", inputImg)
-    key = cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    #key = cv2.waitKey(0)
+    #cv2.destroyAllWindows()
 
 
 def test_live_cam():

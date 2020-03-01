@@ -1,5 +1,6 @@
-import tensorflow.keras as keras
+from tensorflow import keras
 import numpy as np
+
 
 def get_embedding(model, face):
     face = face.astype("float32")
