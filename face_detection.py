@@ -1,7 +1,7 @@
 import numpy as np
 from mtcnn.mtcnn import MTCNN
 from tensorflow import keras
-import cv2
+from cv2 import cv2
 import pickle
 from sklearn.preprocessing import Normalizer
 from prepare_training_embeddings_data import get_embedding
@@ -73,7 +73,7 @@ def test_live_cam():
     cv2.namedWindow("camera", 1)
 
     while True:
-        ret, inputImg = capture.read()
+        _ret, inputImg = capture.read()
         inputImg = cv2.cvtColor(inputImg, cv2.COLOR_BGR2RGB)
         #x,y,z = inputImg.shape
         #x_scaled = (int)(x / 10)
@@ -112,8 +112,7 @@ def test_live_cam():
 
     cv2.destroyAllWindows()
 
+
 if __name__ == "__main__":
     #test_static_img()
     test_live_cam()
-
-

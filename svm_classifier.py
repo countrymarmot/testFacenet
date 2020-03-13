@@ -36,4 +36,3 @@ score_test = accuracy_score(y_val, yhat_val)
 print("Accuracy: train=%.3f, test=%.3f" % (score_train*100, score_test*100))
 
 pickle.dump(model, open("./data/syna_svc.model", 'wb'))
-

@@ -1,5 +1,5 @@
 from mtcnn.mtcnn import MTCNN
-import cv2
+from cv2 import cv2
 import os
 import numpy as np
 

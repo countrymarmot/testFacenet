@@ -14,7 +14,6 @@ def get_embedding(model, face):
 
 
 if __name__ == "__main__":
-
     model = keras.models.load_model("./model/facenet_keras.h5")
     print(model.summary())
 
@@ -38,4 +37,3 @@ if __name__ == "__main__":
     print(newX_val.shape)
 
     np.savez_compressed("data/syna_embeddings.npz", newX_train, y_train, newX_val, y_val)
-
